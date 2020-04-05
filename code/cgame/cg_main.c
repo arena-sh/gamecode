@@ -2105,6 +2105,7 @@ void CG_Init( int serverMessageNum, int serverCommandSequence, int clientNum ) {
 	cgs.media.charsetPropB		= trap_R_RegisterShaderNoMip( "menu/art/font2_prop.tga" );
 
 	CG_RegisterCvars();
+	trap_Cvar_Set("cg_drawTimer","1");
 
 	CG_InitConsoleCommands();
 

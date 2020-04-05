@@ -1414,9 +1414,9 @@ static void CG_DrawUpperRight(stereoFrame_t stereoFrame)
 
 	y = CG_DrawFollowMessage( y );
 
-	//if ( cg_drawTimer.integer) {
-	y = CG_DrawTimer( y );
-	//}
+	if ( cg_drawTimer.integer) {
+		y = CG_DrawTimer( y );
+	}
 	if ( cg_drawAttacker.integer ) {
 		y = CG_DrawAttacker( y );
 	}
